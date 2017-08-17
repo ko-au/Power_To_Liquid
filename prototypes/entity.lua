@@ -15,44 +15,41 @@ data:extend({
       module_slots = 2
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    animation =
+    animation = make_4way_animation_from_spritesheet({ layers =
     {
-      north =
       {
         filename = "__base__/graphics/entity/chemical-plant/chemical-plant.png",
-        width = 156,
-        height = 141,
+        width = 122,
+        height = 134,
         frame_count = 1,
-        shift = {0.5, -0.078125}
+        shift = util.by_pixel(-5, -4.5),
+        hr_version = {
+          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant.png",
+          width = 244,
+          height = 268,
+          frame_count = 1,
+          shift = util.by_pixel(-5, -4.5),
+          scale = 0.5
+		}
       },
-      west =
       {
-        filename = "__base__/graphics/entity/chemical-plant/chemical-plant.png",
-        x = 468,
-        width = 156,
-        height = 141,
+        filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
+        width = 175,
+        height = 110,
         frame_count = 1,
-        shift = {0.5, -0.078125}
+        shift = util.by_pixel(31.5, 11),
+        draw_as_shadow = true,
+        hr_version = {
+          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
+          width = 350,
+          height = 219,
+          frame_count = 1,
+          shift = util.by_pixel(31.5, 10.75),
+          draw_as_shadow = true,
+          scale = 0.5
+        }
       },
-      south =
-      {
-        filename = "__base__/graphics/entity/chemical-plant/chemical-plant.png",
-        x = 312,
-        width = 156,
-        height = 141,
-        frame_count = 1,
-        shift = {0.5, -0.078125}
-      },
-      east =
-      {
-        filename = "__base__/graphics/entity/chemical-plant/chemical-plant.png",
-        x = 156,
-        width = 156,
-        height = 141,
-        frame_count = 1,
-        shift = {0.5, -0.078125}
-      }
-    },
+    }}),
     working_visualisations =
     {
       {

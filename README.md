@@ -7,16 +7,17 @@ Based on [E-Diesel](https://en.wikipedia.org/wiki/E-diesel).
 ### Blue Crude plant
 | Inputs | Outputs |
 | --- | --- | 
-| Pollution: -0.1 | Blue Crude: 2 |
+| Pollution: -0.1 | Blue Crude: 20 |
 | Power: 2.5MW | | 
-| Water: 10 | | 
+| Water: 100 | | 
 
 ### Refinery
 | Inputs | Outputs |
 | --- | --- | 
-| Blue Crude: 10 | Heavy Oil: 2 |
-| Water: 5 | Light Oil: 2 | 
-| | Petroleum: 3 | 
+| Blue Crude: 100 | Heavy Oil: 20 |
+| Water: 50 | Light Oil: 20 | 
+| | Petroleum: 30 | 
 
 ### Version History
+- 0.2.0 - Updated for 0.15
 - 0.1.0 - Initial Release

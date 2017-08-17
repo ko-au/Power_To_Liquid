@@ -13,14 +13,14 @@ data:extend({
 	order = "a[oil-processing]-d[blue-crude-refining]",
     ingredients =
     {
-		{type="fluid", name="water", amount=5},
-		{type="fluid", name="blue-crude", amount=10},
+		{type="fluid", name="water", amount=50},
+		{type="fluid", name="blue-crude", amount=100},
     },
       results=
     {
-      {type="fluid", name="heavy-oil", amount=2},
-      {type="fluid", name="light-oil", amount=2},
-      {type="fluid", name="petroleum-gas", amount=3}
+      {type="fluid", name="heavy-oil", amount=20},
+      {type="fluid", name="light-oil", amount=20},
+      {type="fluid", name="petroleum-gas", amount=30}
     },
 	  main_product= "",
 	  icon = "__Power_To_Liquid__/graphics/blue-crude-refining.png",
@@ -49,11 +49,11 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {type="fluid", name="water", amount=10}
+      {type="fluid", name="water", amount=100}
     },
     results=
     {
-      {type="fluid", name="blue-crude", amount=2}
+      {type="fluid", name="blue-crude", amount=20}
     },
     main_product= "",
     icon = "__Power_To_Liquid__/graphics/blue-crude.png",
